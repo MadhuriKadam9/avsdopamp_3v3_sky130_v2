@@ -51,7 +51,44 @@ Phase Margin Plot of Vout
 
 
 # Post-Layout Simulation of CMOS OPAMP IP
+## Single Stage OPAMP
+### Transient Response
+1) Vinp, Vinm Waveforms
+<img width="868" alt="Vin-tran" src="https://user-images.githubusercontent.com/88900482/130287209-24711fbb-40fe-4797-a4ff-fcc74efb5505.PNG">
 
+2) Vo waveform
+<img width="875" alt="Vo-trans" src="https://user-images.githubusercontent.com/88900482/130287239-f1b2c2e3-7a19-42c9-8544-f86af1b419c6.PNG">
+
+### AC Response
+1) Magnitude Response i.e. VodB
+<img width="878" alt="VOdb-AC" src="https://user-images.githubusercontent.com/88900482/130287350-8175c75a-4065-4f4d-ab6b-f6c3e8ab263d.PNG">
+
+2) Phase Response i.e Vo-ph
+<img width="876" alt="VOph-AC" src="https://user-images.githubusercontent.com/88900482/130287374-d6f46cc4-0f6e-4399-a0eb-017c5a781fe3.PNG">
+
+3) All AC Response of OPAMP1
+<img width="878" alt="opamp1-AC-Resp" src="https://user-images.githubusercontent.com/88900482/130287970-b1949a3f-873d-4ea8-90af-07356268da8b.PNG">
+
+## Dual Stage OPAMP
+### Transient Response
+1) Vinp, Vinm Waveforms
+<img width="868" alt="Vin-tran" src="https://user-images.githubusercontent.com/88900482/130287567-9cfc3728-4d51-4f84-a56c-f71e3167649c.PNG">
+
+2) Vout waveform
+<img width="878" alt="Vout-tran" src="https://user-images.githubusercontent.com/88900482/130287597-8f22aa3b-eda8-46aa-95bb-41b2ed678176.PNG">
+
+### AC Response
+1) Magnitude Response i.e. VodB
+<img width="876" alt="opamp2_AC-mag_res" src="https://user-images.githubusercontent.com/88900482/130287719-117cb295-2d9b-4cad-82f7-2fb370f8bbc7.PNG">
+
+2) Phase Response Vout-ph
+<img width="875" alt="opamp2-AC-Ph-Res" src="https://user-images.githubusercontent.com/88900482/130287767-eff4a4db-afab-443c-a475-ad30fdbd437d.PNG">
+
+3) Phase Margin Plot Vout-PM
+<img width="877" alt="opamp2-AC-PM" src="https://user-images.githubusercontent.com/88900482/130287784-ea5c4ec1-8b6e-4697-9691-99effbd20cf7.PNG">
+
+4) All AC Response
+<img width="914" alt="Opamp2_AC_Res" src="https://user-images.githubusercontent.com/88900482/130287875-db3e9379-5af6-4ca3-85f8-f5bfe4da26e4.PNG">
 
 # Further Work
 
