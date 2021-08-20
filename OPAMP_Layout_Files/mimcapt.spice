@@ -1,0 +1,9 @@
+* SPICE3 file created from mimcapt.ext - technology: sky130A
+
+.option scale=10000u
+
+X0 top bot sky130_fd_pr__cap_mim_m3_1 l=997 w=997
+C0 bot m2_n747_n444# 10.52fF
+C1 top bot 3.48fF
+C2 bot $SUB 2.22fF
+C3 m2_n747_n444# $SUB 3.81fF **FLOATING

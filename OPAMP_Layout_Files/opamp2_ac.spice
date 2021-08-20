@@ -1,0 +1,61 @@
+* SPICE3 file created from opamp2.ext - technology: sky130A
+
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+X0 a_n24_1551# vinm vo w_n738_599# sky130_fd_pr__pfet_01v8 w=25.12 l=.52
+X1 a_n24_1551# vinp vg w_n738_599# sky130_fd_pr__pfet_01v8 w=25.12 l=.52
+X2 top vout sky130_fd_pr__cap_mim_m3_1 l=9.97 w=9.97
+X3 vdd vbias vout vdd sky130_fd_pr__pfet_01v8 w=10.16 l=.50
+X4 vg vg gnd gnd sky130_fd_pr__nfet_01v8 w=9.99 l=.56
+X5 vout vo gnd gnd sky130_fd_pr__nfet_01v8 w=25.20 l=.53
+X6 vo top gnd sky130_fd_pr__res_generic_nd w=2.0 l=.51
+X7 vdd vbias a_n24_1551# vdd sky130_fd_pr__pfet_01v8 w=10.04 l=.48
+X8 vo vg gnd gnd sky130_fd_pr__nfet_01v8 w=9.99 l=.56
+C0 top vout 3.49fF
+C1 top gnd 6.14fF
+C2 vout gnd 21.51fF
+C3 vo gnd 11.59fF
+C4 vg gnd 5.66fF
+C5 vinm gnd 2.16fF
+C6 vinp gnd 2.11fF
+C7 a_n24_1551# gnd 5.06fF
+C8 vbias gnd 10.03fF
+C9 w_n738_599# gnd 91.23fF
+C10 vdd gnd 207.16fF
+
+******* DC supply info******
+VDD vdd GND 5
+VBIAS vbias 0 3.9
+
+*******Transient analysis AC Source********
+*VINP vinp 0 SIN(3.9 1m 10k 0 0 0)
+*VINM vinm 0 SIN(3.9 1m 10k 0 0 180)
+
+*******AC analysis AC Source******
+VINP vinp 0 dc 3.9 ac 1
+VINM vinm 0 dc 3.9 ac -1
+
+*******Tran command*******
+*.tran 0.1us 1000us
+********Transient Plot ******
+.control
+run
+*plot V(vinp) V(vinm) 
+*plot V(vo) 
+*plot V(vdd) V(vbias)
+
+******AC Command*****
+ac dec 100 1 1000meg
+*Magnitude dB plot for v(vout) on log scale
+plot vdb(vout) xlog
+
+*Phase degrees plot for v(vout) on log scale
+let outd = 57.29*vp(vout)
+settype phase outd
+plot outd xlimit 1 1000meg ylabel 'phase'
+let pm = outd + 180
+settype phase pm
+plot pm xlimit 1 1000meg ylabel 'Phase Margin'
+
+.endc
+.end

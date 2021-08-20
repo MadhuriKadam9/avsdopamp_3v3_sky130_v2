@@ -1,0 +1,29 @@
+magic
+tech sky130A
+timestamp 1628868150
+<< ndiffc >>
+rect -80 10 -60 30
+rect -80 -60 -60 -40
+<< ndiffres >>
+rect -90 30 10 40
+rect -90 10 -80 30
+rect -60 10 10 30
+rect -90 0 10 10
+rect -19 -30 10 0
+rect -90 -40 10 -30
+rect -90 -60 -80 -40
+rect -60 -60 10 -40
+rect -90 -70 10 -60
+<< locali >>
+rect -90 30 -50 40
+rect -90 10 -80 30
+rect -60 10 -50 30
+rect -90 0 -50 10
+rect -90 -40 -50 -30
+rect -90 -60 -80 -40
+rect -60 -60 -50 -40
+rect -90 -70 -50 -60
+<< labels >>
+rlabel locali -79 4 -68 9 1 a
+rlabel locali -78 -67 -67 -62 1 b
+<< end >>
