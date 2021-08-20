@@ -1,0 +1,44 @@
+
+
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+* Sheet Name: /
+xM1  Net-_M1-Pad1_ vbias vdd vdd sky130_fd_pr__pfet_01v8 w=20 l=1		
+xM4  Net-_M2-Pad1_ Net-_M2-Pad1_ vss vss sky130_fd_pr__nfet_01v8 w=20 l=1		
+xM2  Net-_M2-Pad1_ vinp Net-_M1-Pad1_ Net-_M1-Pad1_ sky130_fd_pr__pfet_01v8 w=50 l=1		
+xM3  vo vinm Net-_M1-Pad1_ Net-_M1-Pad1_ sky130_fd_pr__pfet_01v8 w=50 l=1		
+xM5  vo Net-_M2-Pad1_ vss vss sky130_fd_pr__nfet_01v8 w=20 l=1
+				
+R1  vo Net-_C1-Pad2_ 290		
+C1  vout Net-_C1-Pad2_ 3.2p		
+xM6  vout vbias vdd vdd sky130_fd_pr__pfet_01v8 w=20 l=1		
+xM7  vout vo GND GND sky130_fd_pr__nfet_01v8 w=50 l=1
+CL  vout GND 14p
+
+******* DC supply info******
+VDD vdd GND 5
+VSS vss GND 0
+VBIAS vbias 0 3.9
+
+*******Transient analysis AC Source********
+VINP vinp 0 SIN(3.9 1m 10k 0 0 0)
+VINM vinm 0 SIN(3.9 1m 10k 0 0 180)
+
+*******AC analysis AC Source******
+*VINP vinp 0 dc 3.9 ac 1
+*VINM vinm 0 dc 3.9 ac -1
+
+*******Tran command*******
+.tran 0.1us 1000us
+********Transient Plot ******
+.control
+run
+plot V(vinp) V(vinm) 
+plot V(vout)
+plot V(vo) 
+plot V(vdd) V(vbias)
+
+
+.endc
+
+.end
