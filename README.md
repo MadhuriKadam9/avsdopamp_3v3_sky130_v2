@@ -91,9 +91,11 @@ Phase Margin Plot of Vout
 <img width="914" alt="Opamp2_AC_Res" src="https://user-images.githubusercontent.com/88900482/130287875-db3e9379-5af6-4ca3-85f8-f5bfe4da26e4.PNG">
 
 # Further Work
-
+From the postlayout transient response of Two stage opamp it can be obsereved that the negative peak of vout is flattened. This results in reduction of overall voltage swing at the output. So with proper design this problem can be solved.
 
 # Contributors
-
+1) Mrs. Madhuri H. Kadam, Assistant Professor, Shree L. R. Tiwari college of Engineering, Mira Rd (E) - madhurib.saksham@gmail.com
+2) Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
 
 # Acknowledgements
+2) Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
