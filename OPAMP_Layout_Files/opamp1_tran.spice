@@ -1,0 +1,40 @@
+* SPICE3 file created from opamp1.ext - technology: sky130A
+
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+
+X0 vo vg gnd gnd sky130_fd_pr__nfet_01v8 w=9.99 l=.56
+X1 vg vg gnd gnd sky130_fd_pr__nfet_01v8 w=9.99 l=.56
+X2 vdd vbias a_80_n503# vdd sky130_fd_pr__pfet_01v8 w=10.04 l=.48
+X3 a_80_n503# vinp vg w_n634_n1455# sky130_fd_pr__pfet_01v8 w=25.12 l=.52
+X4 a_80_n503# vinm vo w_n634_n1455# sky130_fd_pr__pfet_01v8 w=25.12 l=.52
+C0 vo gnd 2.84fF
+C1 vg gnd 5.66fF
+C2 vinm gnd 2.16fF
+C3 vinp gnd 2.11fF
+C4 a_80_n503# gnd 5.06fF
+C5 w_n634_n1455# gnd 116.48fF
+C6 vdd gnd 144.35fF
+
+******* DC supply info******
+VDD vdd GND 5
+VBIAS vbias 0 3.9
+
+*******Transient analysis AC Source********
+VINP vinp 0 SIN(3.9 1m 10k 0 0 0)
+VINM vinm 0 SIN(3.9 1m 10k 0 0 180)
+
+*******Tran command*******
+.tran 0.1us 1000us
+
+********Transient Plot ******
+.control
+run
+plot V(vinp) V(vinm) 
+plot V(vo) 
+plot V(vdd) V(vbias)
+
+
+ 		
+.endc
+
+.end
