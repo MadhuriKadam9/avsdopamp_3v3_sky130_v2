@@ -34,16 +34,17 @@ After successful installation, to invoke Ngspice type the following command on t
 
 ngspice "circuit file to be simulated"
 
-### A) Transient Response of Single stage OPAMP
+### A) Transient Response of Two stage OPAMP
+To get the transient response of two stage OPAMP run the following file in ngspice: Opamp_TRAN.cir
+
 <img width="921" alt="Vin-tran" src="https://user-images.githubusercontent.com/88900482/130285858-8b30650b-a886-4e35-972b-5ece61a7e057.PNG">
 
-<img width="927" alt="Vo-tran" src="https://user-images.githubusercontent.com/88900482/130285882-295a97bf-a30d-4325-97ac-9f0ca2cd23ea.PNG">
 
-### B) AC Response of Single stage OPAMP
-### C) Transient Response of Two stage OPAMP
 <img width="945" alt="Vout-tran" src="https://user-images.githubusercontent.com/88900482/130286285-eb1cbb5c-641b-47d3-a2c8-aef8183c81c9.PNG">
 
-### D) AC Response of Two stage OPAMP
+### B) AC Response of Two stage OPAMP
+To get the transient response of two stage OPAMP run the following file in ngspice: Opamp_AC.cir
+
 Magnitude Response Vout-dB i.e. ADM 
 <img width="937" alt="vout-ac-magres" src="https://user-images.githubusercontent.com/88900482/130286370-f3c78ccf-c60a-47b1-aaed-abaa6ee4a8da.PNG">
 
