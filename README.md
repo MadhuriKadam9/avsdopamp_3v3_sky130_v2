@@ -35,7 +35,7 @@ After successful installation, to invoke Ngspice type the following command on t
 ngspice "circuit file to be simulated"
 
 ### A) Transient Response of Two stage OPAMP
-To get the transient response of two stage OPAMP run the following file in ngspice: Opamp_TRAN.cir
+To get the transient response of two stage OPAMP run the following file in ngspice: Opamp_TRAN.cir.out
 
 <img width="921" alt="Vin-tran" src="https://user-images.githubusercontent.com/88900482/130285858-8b30650b-a886-4e35-972b-5ece61a7e057.PNG">
 
@@ -43,7 +43,7 @@ To get the transient response of two stage OPAMP run the following file in ngspi
 <img width="945" alt="Vout-tran" src="https://user-images.githubusercontent.com/88900482/130286285-eb1cbb5c-641b-47d3-a2c8-aef8183c81c9.PNG">
 
 ### B) AC Response of Two stage OPAMP
-To get the transient response of two stage OPAMP run the following file in ngspice: Opamp_AC.cir
+To get the transient response of two stage OPAMP run the following file in ngspice: Opamp_AC.cir.out
 
 Magnitude Response Vout-dB i.e. ADM 
 <img width="937" alt="vout-ac-magres" src="https://user-images.githubusercontent.com/88900482/130286370-f3c78ccf-c60a-47b1-aaed-abaa6ee4a8da.PNG">
@@ -55,6 +55,26 @@ Phase Margin Plot of Vout
 <img width="930" alt="vout-ac-pm (2)" src="https://user-images.githubusercontent.com/88900482/130286501-edc307f8-15bb-4a09-b437-c6735b6a2be5.PNG">
 
 # Layout with Magic Tool
+## MAGIC Tool installation:
+The Layout for the circuit was done using Magic Layout editor tool. To observe the layout, install magic using the following commands :-
+
+sudo wget "http://opencircuitdesign.com/magic/archive/magic-8.3.122.tgz"
+
+tar -xvzf magic-8.3.122.tgz
+
+cd magic-8.3.122
+
+sudo ./configure
+
+sudo make
+
+sudo make install
+After successful installation, type:-
+
+cd avsdbgp_3v3_sky130_v2/Layout/
+
+magic -T ../libs/sky130A.tech BGR.mag
+
 ## Resistor
 <img width="258" alt="Resistor" src="https://user-images.githubusercontent.com/88900482/130286663-1837abf3-2aca-4d53-a730-280819ec12bf.PNG">
 
