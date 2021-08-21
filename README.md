@@ -99,6 +99,8 @@ To see opamp2 layout give command    magic -T ../libs/sky130A.tech opamp2.mag
 # Post-Layout Simulation of CMOS OPAMP IP
 ## Single Stage OPAMP
 ### Transient Response
+Run the following file in ngspice: opamp1_tran.spice
+
 1) Vinp, Vinm Waveforms
 <img width="868" alt="Vin-tran" src="https://user-images.githubusercontent.com/88900482/130287209-24711fbb-40fe-4797-a4ff-fcc74efb5505.PNG">
 
@@ -106,7 +108,7 @@ To see opamp2 layout give command    magic -T ../libs/sky130A.tech opamp2.mag
 <img width="875" alt="Vo-trans" src="https://user-images.githubusercontent.com/88900482/130287239-f1b2c2e3-7a19-42c9-8544-f86af1b419c6.PNG">
 
 ### AC Response
-Run the following file in ngspice: opamp1.spice
+Run the following file in ngspice: opamp1_ac.spice
 
 1) Magnitude Response i.e. VodB
 <img width="878" alt="VOdb-AC" src="https://user-images.githubusercontent.com/88900482/130287350-8175c75a-4065-4f4d-ab6b-f6c3e8ab263d.PNG">
