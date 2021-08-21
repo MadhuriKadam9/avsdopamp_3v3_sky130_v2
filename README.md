@@ -1,5 +1,5 @@
 # Cmosopamp
-CMOS OPAMP is Basic building block of analog and Mixe signal circuits. It is used in many applications such as ADC, DAC and Instrumentation Amplifier.
+CMOS OPAMP is Basic building block of analog and Mixed signal circuits. It is used in many applications such as ADC, DAC and Instrumentation Amplifier.
 It basically amplifies the difference between two input signals.
 # Instumentation Amplifier: An Application Of CMOS OPAMP
 <img width="661" alt="Instru-Amp" src="https://user-images.githubusercontent.com/88900482/130283601-f840c5fe-f285-4f46-92b2-f93b9e5e9480.PNG">
