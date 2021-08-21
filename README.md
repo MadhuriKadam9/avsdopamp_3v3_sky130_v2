@@ -11,6 +11,12 @@ It basically amplifies the difference between two input signals.
 <img width="345" alt="OPAMP-Block Dig" src="https://user-images.githubusercontent.com/88900482/130284202-28dce16c-5f7b-45a7-916d-11d1ce77082a.PNG">
 
 # Downloading the files on your System
+The files from this repository can be downloaded and used by the following commands :-
+
+sudo apt install -y git
+
+git clone https://github.com/vsdip/avsdbgp_3v3_sky130_v2.git
+
 
 # Pre-Layout Simulation of CMOS OPAMP IP 
 ## 1. Schematic of CMOS OPAMP IP designd in eSim
