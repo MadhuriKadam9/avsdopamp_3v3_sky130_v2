@@ -69,22 +69,28 @@ sudo ./configure
 sudo make
 
 sudo make install
-After successful installation, type:-
 
-cd avsdbgp_3v3_sky130_v2/Layout/
-
-magic -T ../libs/sky130A.tech BGR.mag
 
 ## Resistor
+After successful installation, To open Resistor layout in magic type following in terminal window:-
+
+cd Cmosopamp/OPAMP_Layout_Files/
+
+magic -T ../libs/sky130A.tech res.mag
+
+
 <img width="258" alt="Resistor" src="https://user-images.githubusercontent.com/88900482/130286663-1837abf3-2aca-4d53-a730-280819ec12bf.PNG">
 
 ## Capacitor
+To see capacitor layout give command    magic -T ../libs/sky130A.tech mimcapt.mag
 <img width="277" alt="Mimcap" src="https://user-images.githubusercontent.com/88900482/130286698-14e366b5-dc1c-45ad-94a3-79a59edd8f5d.PNG">
 
 ## Single stage OPAMP
+To see opamp1 layout give command    magic -T ../libs/sky130A.tech opamp1.mag
 <img width="553" alt="OPAMP1" src="https://user-images.githubusercontent.com/88900482/130286722-b432a8a2-be15-4cbd-bd4b-abca911322af.PNG">
 
 ## Dual Stage OPAMP
+To see opamp2 layout give command    magic -T ../libs/sky130A.tech opamp2.mag
 <img width="730" alt="Opamp2" src="https://user-images.githubusercontent.com/88900482/130286739-103c6a5f-bd6a-4d54-ab49-cc80a09e2f53.PNG">
 
 
