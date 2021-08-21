@@ -83,7 +83,9 @@ magic -T ../libs/sky130A.tech res.mag
 
 ## Capacitor
 To see capacitor layout give command    magic -T ../libs/sky130A.tech mimcapt.mag
+
 <img width="277" alt="Mimcap" src="https://user-images.githubusercontent.com/88900482/130286698-14e366b5-dc1c-45ad-94a3-79a59edd8f5d.PNG">
+
 
 ## Single stage OPAMP
 To see opamp1 layout give command    magic -T ../libs/sky130A.tech opamp1.mag
@@ -104,6 +106,8 @@ To see opamp2 layout give command    magic -T ../libs/sky130A.tech opamp2.mag
 <img width="875" alt="Vo-trans" src="https://user-images.githubusercontent.com/88900482/130287239-f1b2c2e3-7a19-42c9-8544-f86af1b419c6.PNG">
 
 ### AC Response
+Run the following file in ngspice: opamp1.spice
+
 1) Magnitude Response i.e. VodB
 <img width="878" alt="VOdb-AC" src="https://user-images.githubusercontent.com/88900482/130287350-8175c75a-4065-4f4d-ab6b-f6c3e8ab263d.PNG">
 
@@ -115,6 +119,8 @@ To see opamp2 layout give command    magic -T ../libs/sky130A.tech opamp2.mag
 
 ## Dual Stage OPAMP
 ### Transient Response
+Run the following file in ngspice: opamp2_tran.spice
+
 1) Vinp, Vinm Waveforms
 <img width="868" alt="Vin-tran" src="https://user-images.githubusercontent.com/88900482/130287567-9cfc3728-4d51-4f84-a56c-f71e3167649c.PNG">
 
@@ -122,6 +128,8 @@ To see opamp2 layout give command    magic -T ../libs/sky130A.tech opamp2.mag
 <img width="878" alt="Vout-tran" src="https://user-images.githubusercontent.com/88900482/130287597-8f22aa3b-eda8-46aa-95bb-41b2ed678176.PNG">
 
 ### AC Response
+Run the following file in ngspice: opamp2_ac.spice
+
 1) Magnitude Response i.e. VodB
 <img width="876" alt="opamp2_AC-mag_res" src="https://user-images.githubusercontent.com/88900482/130287719-117cb295-2d9b-4cad-82f7-2fb370f8bbc7.PNG">
 
