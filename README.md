@@ -15,7 +15,7 @@ The files from this repository can be downloaded and used by the following comma
 
 sudo apt install -y git
 
-git clone https://github.com/vsdip/avsdbgp_3v3_sky130_v2.git
+git clone https://github.com/MadhuriKadam9/Cmosopamp.git
 
 
 # Pre-Layout Simulation of CMOS OPAMP IP 
@@ -23,6 +23,14 @@ git clone https://github.com/vsdip/avsdbgp_3v3_sky130_v2.git
 <img width="573" alt="Combined_ckt" src="https://user-images.githubusercontent.com/88900482/130285141-6a033032-0108-4130-aff0-3394034cd5aa.png">
 
 ## 2. Ngspice Simulation Results
+Ngspice is an open source mixed-signal circuit simulator. To install Ngspice on Ubuntu, open terminal window and type :-
+
+sudo apt-get install -y ngspice
+
+After successful installation, to invoke Ngspice type the following command on the terminal window.
+
+ngspice <circuit file to be simulated>
+
 ### A) Transient Response of Single stage OPAMP
 <img width="921" alt="Vin-tran" src="https://user-images.githubusercontent.com/88900482/130285858-8b30650b-a886-4e35-972b-5ece61a7e057.PNG">
 
