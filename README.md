@@ -20,6 +20,9 @@ git clone https://github.com/MadhuriKadam9/Cmosopamp.git
 
 # Pre-Layout Simulation of CMOS OPAMP IP 
 ## 1. Schematic of CMOS OPAMP IP designd in eSim
+Install the eSim tool using this https://esim.fossee.in/downloads  
+Note: You can also refer to the eSim Spoken Tutorialwebsite https://spoken-tutorial.org/tutorial-search/?search_foss=eSim
+
 <img width="573" alt="Combined_ckt" src="https://user-images.githubusercontent.com/88900482/130285141-6a033032-0108-4130-aff0-3394034cd5aa.png">
 
 ## 2. Ngspice Simulation Results
@@ -29,7 +32,7 @@ sudo apt-get install -y ngspice
 
 After successful installation, to invoke Ngspice type the following command on the terminal window.
 
-ngspice <circuit file to be simulated>
+ngspice "circuit file to be simulated"
 
 ### A) Transient Response of Single stage OPAMP
 <img width="921" alt="Vin-tran" src="https://user-images.githubusercontent.com/88900482/130285858-8b30650b-a886-4e35-972b-5ece61a7e057.PNG">
