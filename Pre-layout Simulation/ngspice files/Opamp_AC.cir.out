@@ -26,17 +26,7 @@ VBIAS vbias 0 3.9
 
 *******AC analysis AC Source******
 VINP vinp 0 dc 3.9 ac 1
-VINM vinm 0 dc 3.9 ac 1
-
-*******Tran command*******
-*.tran 0.1us 1000us
-********Transient Plot ******
-.control
-run
-*plot V(vinp) V(vinm) 
-*plot V(vout)
-*plot V(vo) 
-*plot V(vdd) V(vbias)
+VINM vinm 0 dc 3.9 ac -1
 
 ******AC Command*****
 ac dec 100 1 1000meg
