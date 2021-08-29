@@ -149,7 +149,7 @@ From the postlayout transient response of Two stage opamp it can be obsereved th
 
 # Contributors
 1) Mrs. Madhuri H. Kadam, Assistant Professor, Shree L. R. Tiwari college of Engineering, Mira Rd (E) - madhurib.saksham@gmail.com
-2) Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
+2) Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalpghosh@gmail.com
 
 # Acknowledgements
-Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalghosh@gmail.com
+Kunal Ghosh, Co-Founder of VLSI System Design (VSD) Corp. Pvt. Ltd. - kunalpghosh@gmail.com
