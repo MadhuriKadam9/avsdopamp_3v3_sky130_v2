@@ -1,3 +1,5 @@
+![license](https://img.shields.io/github/license/MadhuriKadam9/avsdopamp_3v3_sky130_v2?color=red)
+
 # Two Stage CMOS OPAMP with Frequency Compensation
 CMOS OPAMP is Basic building block of analog and Mixed signal circuits. It is used in many applications such as ADC, DAC and Instrumentation Amplifier.
 It basically amplifies the difference between two input signals.
