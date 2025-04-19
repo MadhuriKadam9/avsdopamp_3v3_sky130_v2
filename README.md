@@ -6,7 +6,7 @@ It basically amplifies the difference between two input signals.
 # Instumentation Amplifier: An Application Of CMOS OPAMP
 <img width="661" alt="Instru-Amp" src="https://user-images.githubusercontent.com/88900482/130283601-f840c5fe-f285-4f46-92b2-f93b9e5e9480.PNG">
 
-# Performance parameters of Bandgap Reference IP
+# Performance parameters of CMOS OPAMP IP
 <img width="515" alt="Perfor-para" src="https://user-images.githubusercontent.com/88900482/130284019-6360918c-f9c1-4a17-8416-c410cce3271c.PNG">
 
 # Block Diagram of CMOS OPAMP IP
